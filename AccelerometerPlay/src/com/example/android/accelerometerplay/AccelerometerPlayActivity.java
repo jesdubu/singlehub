@@ -61,7 +61,7 @@ public class AccelerometerPlayActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
     	//asdfadfasdf
     	//zzzzzzzzzzzzzzzzzzzzzzzzzzz
-    	//zzz1111111
+    	//zzz22222222
         super.onCreate(savedInstanceState);
 
         // Get an instance of the SensorManager
