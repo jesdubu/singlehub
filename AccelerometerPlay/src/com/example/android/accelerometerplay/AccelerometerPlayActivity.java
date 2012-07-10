@@ -60,6 +60,8 @@ public class AccelerometerPlayActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
     	//asdfadfasdf
+    	//zzzzzzzzzzzzzzzzzzzzzzzzzzz
+    	//zzz1111111
         super.onCreate(savedInstanceState);
 
         // Get an instance of the SensorManager
@@ -166,7 +168,7 @@ public class AccelerometerPlayActivity extends Activity {
                 final float gy = -sy * m;
 
                 /*
-                 * 텳 = mA <=> A = 텳 / m We could simplify the code by
+                 * ��= mA <=> A = ��/ m We could simplify the code by
                  * completely eliminating "m" (the mass) from all the equations,
                  * but it would hide the concepts from this sample code.
                  */
@@ -176,12 +178,12 @@ public class AccelerometerPlayActivity extends Activity {
 
                 /*
                  * Time-corrected Verlet integration The position Verlet
-                 * integrator is defined as x(t+�) = x(t) + x(t) - x(t-�) +
-                 * a(t)�� However, the above equation doesn't handle variable
-                 * � very well, a time-corrected version is needed: x(t+�) =
-                 * x(t) + (x(t) - x(t-�)) * (�/�_prev) + a(t)�� We also add
-                 * a simple friction term (f) to the equation: x(t+�) = x(t) +
-                 * (1-f) * (x(t) - x(t-�)) * (�/�_prev) + a(t)��
+                 * integrator is defined as x(t+占� = x(t) + x(t) - x(t-占� +
+                 * a(t)占쏙옙 However, the above equation doesn't handle variable
+                 * 占�very well, a time-corrected version is needed: x(t+占� =
+                 * x(t) + (x(t) - x(t-占�) * (占�占�prev) + a(t)占쏙옙 We also add
+                 * a simple friction term (f) to the equation: x(t+占� = x(t) +
+                 * (1-f) * (x(t) - x(t-占�) * (占�占�prev) + a(t)占쏙옙
                  */
                 final float dTdT = dT * dT;
                 final float x = mPosX + mOneMinusFriction * dTC * (mPosX - mLastPosX) + mAccelX
