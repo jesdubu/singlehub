@@ -59,6 +59,7 @@ public class AccelerometerPlayActivity extends Activity {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
+    	//asdfadfasdf
         super.onCreate(savedInstanceState);
 
         // Get an instance of the SensorManager
@@ -165,7 +166,7 @@ public class AccelerometerPlayActivity extends Activity {
                 final float gy = -sy * m;
 
                 /*
-                 * ·F = mA <=> A = ·F / m We could simplify the code by
+                 * í…³ = mA <=> A = í…³ / m We could simplify the code by
                  * completely eliminating "m" (the mass) from all the equations,
                  * but it would hide the concepts from this sample code.
                  */
@@ -175,12 +176,12 @@ public class AccelerometerPlayActivity extends Activity {
 
                 /*
                  * Time-corrected Verlet integration The position Verlet
-                 * integrator is defined as x(t+Æt) = x(t) + x(t) - x(t-Æt) +
-                 * a(t)Ætö2 However, the above equation doesn't handle variable
-                 * Æt very well, a time-corrected version is needed: x(t+Æt) =
-                 * x(t) + (x(t) - x(t-Æt)) * (Æt/Æt_prev) + a(t)Ætö2 We also add
-                 * a simple friction term (f) to the equation: x(t+Æt) = x(t) +
-                 * (1-f) * (x(t) - x(t-Æt)) * (Æt/Æt_prev) + a(t)Ætö2
+                 * integrator is defined as x(t+ï¿½) = x(t) + x(t) - x(t-ï¿½) +
+                 * a(t)ï¿½ï¿½ However, the above equation doesn't handle variable
+                 * ï¿½ very well, a time-corrected version is needed: x(t+ï¿½) =
+                 * x(t) + (x(t) - x(t-ï¿½)) * (ï¿½/ï¿½_prev) + a(t)ï¿½ï¿½ We also add
+                 * a simple friction term (f) to the equation: x(t+ï¿½) = x(t) +
+                 * (1-f) * (x(t) - x(t-ï¿½)) * (ï¿½/ï¿½_prev) + a(t)ï¿½ï¿½
                  */
                 final float dTdT = dT * dT;
                 final float x = mPosX + mOneMinusFriction * dTC * (mPosX - mLastPosX) + mAccelX
